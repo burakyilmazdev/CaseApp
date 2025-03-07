@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		EC157EE82D786DED00301FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157EE72D786DED00301FD1 /* AppDelegate.swift */; };
 		EC157EEA2D786DED00301FD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157EE92D786DED00301FD1 /* SceneDelegate.swift */; };
-		EC157EEC2D786DED00301FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157EEB2D786DED00301FD1 /* ViewController.swift */; };
+		EC157EEC2D786DED00301FD1 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157EEB2D786DED00301FD1 /* UserListViewController.swift */; };
 		EC157EEF2D786DED00301FD1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EC157EEE2D786DED00301FD1 /* Base */; };
 		EC157EF12D786DEF00301FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC157EF02D786DEF00301FD1 /* Assets.xcassets */; };
 		EC157EF42D786DEF00301FD1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EC157EF32D786DEF00301FD1 /* Base */; };
 		EC157EFF2D786DEF00301FD1 /* CaseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157EFE2D786DEF00301FD1 /* CaseAppTests.swift */; };
 		EC157F092D786DEF00301FD1 /* CaseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F082D786DEF00301FD1 /* CaseAppUITests.swift */; };
 		EC157F0B2D786DEF00301FD1 /* CaseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F0A2D786DEF00301FD1 /* CaseAppUITestsLaunchTests.swift */; };
+		EC157F202D78730E00301FD1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F1F2D78730E00301FD1 /* NetworkManager.swift */; };
+		EC157F222D78734D00301FD1 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F212D78734D00301FD1 /* EndPoint.swift */; };
+		EC157F242D7878E200301FD1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F232D7878E200301FD1 /* User.swift */; };
+		EC157F262D7878EF00301FD1 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F252D7878EF00301FD1 /* Company.swift */; };
+		EC157F282D7878FC00301FD1 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F272D7878FC00301FD1 /* Geo.swift */; };
+		EC157F2A2D78792C00301FD1 /* Adress.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F292D78792C00301FD1 /* Adress.swift */; };
+		EC157F2C2D7879C900301FD1 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F2B2D7879C900301FD1 /* UserListViewModel.swift */; };
+		EC157F2F2D787BF000301FD1 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F2E2D787BF000301FD1 /* UserRepository.swift */; };
+		EC157F332D78890000301FD1 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F312D78890000301FD1 /* UserListTableViewCell.swift */; };
+		EC157F342D78890000301FD1 /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC157F322D78890000301FD1 /* UserListTableViewCell.xib */; };
+		EC157F372D7896AA00301FD1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC157F362D7896AA00301FD1 /* UIViewController+Extension.swift */; };
+		EC157F382D78A09100301FD1 /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC157EED2D786DED00301FD1 /* UserList.storyboard */; };
+		EC157F3A2D78A18400301FD1 /* UserDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC157F392D78A18400301FD1 /* UserDetail.storyboard */; };
+		ECBD89FC2D7B2FF1002F8EBA /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD89FB2D7B2FF1002F8EBA /* UserDetailViewController.swift */; };
+		ECBD89FE2D7B3F66002F8EBA /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD89FD2D7B3F66002F8EBA /* MKMapView+Extension.swift */; };
+		ECBD8A002D7B5959002F8EBA /* UserDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD89FF2D7B5959002F8EBA /* UserDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +55,8 @@
 		EC157EE42D786DED00301FD1 /* CaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC157EE72D786DED00301FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC157EE92D786DED00301FD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC157EEB2D786DED00301FD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC157EEE2D786DED00301FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC157EEB2D786DED00301FD1 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		EC157EEE2D786DED00301FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserList.storyboard; sourceTree = "<group>"; };
 		EC157EF02D786DEF00301FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC157EF32D786DEF00301FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC157EF52D786DEF00301FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +65,21 @@
 		EC157F042D786DEF00301FD1 /* CaseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC157F082D786DEF00301FD1 /* CaseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseAppUITests.swift; sourceTree = "<group>"; };
 		EC157F0A2D786DEF00301FD1 /* CaseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC157F1F2D78730E00301FD1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EC157F212D78734D00301FD1 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		EC157F232D7878E200301FD1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC157F252D7878EF00301FD1 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		EC157F272D7878FC00301FD1 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		EC157F292D78792C00301FD1 /* Adress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adress.swift; sourceTree = "<group>"; };
+		EC157F2B2D7879C900301FD1 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		EC157F2E2D787BF000301FD1 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		EC157F312D78890000301FD1 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		EC157F322D78890000301FD1 /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
+		EC157F362D7896AA00301FD1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		EC157F392D78A18400301FD1 /* UserDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetail.storyboard; sourceTree = "<group>"; };
+		ECBD89FB2D7B2FF1002F8EBA /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		ECBD89FD2D7B3F66002F8EBA /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
+		ECBD89FF2D7B5959002F8EBA /* UserDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +130,14 @@
 		EC157EE62D786DED00301FD1 /* CaseApp */ = {
 			isa = PBXGroup;
 			children = (
-				EC157EE72D786DED00301FD1 /* AppDelegate.swift */,
-				EC157EE92D786DED00301FD1 /* SceneDelegate.swift */,
-				EC157EEB2D786DED00301FD1 /* ViewController.swift */,
-				EC157EED2D786DED00301FD1 /* Main.storyboard */,
+				EC157F352D78969A00301FD1 /* Extension */,
+				EC157F172D786DFF00301FD1 /* App */,
+				EC157F1B2D786E2000301FD1 /* Network */,
+				EC157F182D786E0F00301FD1 /* Model */,
+				EC157F192D786E1500301FD1 /* View */,
+				EC157F1A2D786E1A00301FD1 /* ViewModel */,
+				EC157F2D2D787A8C00301FD1 /* Repository */,
 				EC157EF02D786DEF00301FD1 /* Assets.xcassets */,
-				EC157EF22D786DEF00301FD1 /* LaunchScreen.storyboard */,
 				EC157EF52D786DEF00301FD1 /* Info.plist */,
 			);
 			path = CaseApp;
@@ -114,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				EC157EFE2D786DEF00301FD1 /* CaseAppTests.swift */,
+				ECBD89FF2D7B5959002F8EBA /* UserDetailViewModelTests.swift */,
 			);
 			path = CaseAppTests;
 			sourceTree = "<group>";
@@ -125,6 +159,106 @@
 				EC157F0A2D786DEF00301FD1 /* CaseAppUITestsLaunchTests.swift */,
 			);
 			path = CaseAppUITests;
+			sourceTree = "<group>";
+		};
+		EC157F172D786DFF00301FD1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EC157EE92D786DED00301FD1 /* SceneDelegate.swift */,
+				EC157EE72D786DED00301FD1 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EC157F182D786E0F00301FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC157F232D7878E200301FD1 /* User.swift */,
+				EC157F252D7878EF00301FD1 /* Company.swift */,
+				EC157F272D7878FC00301FD1 /* Geo.swift */,
+				EC157F292D78792C00301FD1 /* Adress.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC157F192D786E1500301FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC157F1D2D786E2F00301FD1 /* Controllers */,
+				EC157F1C2D786E2900301FD1 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC157F1A2D786E1A00301FD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC157F2B2D7879C900301FD1 /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EC157F1B2D786E2000301FD1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC157F1F2D78730E00301FD1 /* NetworkManager.swift */,
+				EC157F212D78734D00301FD1 /* EndPoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC157F1C2D786E2900301FD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC157F302D78888B00301FD1 /* Cells */,
+				EC157F1E2D786E4100301FD1 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC157F1D2D786E2F00301FD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC157EEB2D786DED00301FD1 /* UserListViewController.swift */,
+				ECBD89FB2D7B2FF1002F8EBA /* UserDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC157F1E2D786E4100301FD1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EC157EF22D786DEF00301FD1 /* LaunchScreen.storyboard */,
+				EC157EED2D786DED00301FD1 /* UserList.storyboard */,
+				EC157F392D78A18400301FD1 /* UserDetail.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EC157F2D2D787A8C00301FD1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EC157F2E2D787BF000301FD1 /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EC157F302D78888B00301FD1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC157F312D78890000301FD1 /* UserListTableViewCell.swift */,
+				EC157F322D78890000301FD1 /* UserListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EC157F352D78969A00301FD1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC157F362D7896AA00301FD1 /* UIViewController+Extension.swift */,
+				ECBD89FD2D7B3F66002F8EBA /* MKMapView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +365,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC157F382D78A09100301FD1 /* UserList.storyboard in Resources */,
+				EC157F342D78890000301FD1 /* UserListTableViewCell.xib in Resources */,
+				EC157F3A2D78A18400301FD1 /* UserDetail.storyboard in Resources */,
 				EC157EF12D786DEF00301FD1 /* Assets.xcassets in Resources */,
 				EC157EF42D786DEF00301FD1 /* Base in Resources */,
 				EC157EEF2D786DED00301FD1 /* Base in Resources */,
@@ -258,9 +395,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC157EEC2D786DED00301FD1 /* ViewController.swift in Sources */,
+				ECBD89FC2D7B2FF1002F8EBA /* UserDetailViewController.swift in Sources */,
+				EC157F2F2D787BF000301FD1 /* UserRepository.swift in Sources */,
+				EC157F372D7896AA00301FD1 /* UIViewController+Extension.swift in Sources */,
+				EC157F202D78730E00301FD1 /* NetworkManager.swift in Sources */,
+				EC157EEC2D786DED00301FD1 /* UserListViewController.swift in Sources */,
+				EC157F242D7878E200301FD1 /* User.swift in Sources */,
+				EC157F332D78890000301FD1 /* UserListTableViewCell.swift in Sources */,
+				EC157F222D78734D00301FD1 /* EndPoint.swift in Sources */,
+				EC157F262D7878EF00301FD1 /* Company.swift in Sources */,
 				EC157EE82D786DED00301FD1 /* AppDelegate.swift in Sources */,
 				EC157EEA2D786DED00301FD1 /* SceneDelegate.swift in Sources */,
+				EC157F282D7878FC00301FD1 /* Geo.swift in Sources */,
+				EC157F2A2D78792C00301FD1 /* Adress.swift in Sources */,
+				ECBD89FE2D7B3F66002F8EBA /* MKMapView+Extension.swift in Sources */,
+				EC157F2C2D7879C900301FD1 /* UserListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBD8A002D7B5959002F8EBA /* UserDetailViewModelTests.swift in Sources */,
 				EC157EFF2D786DEF00301FD1 /* CaseAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,12 +447,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC157EED2D786DED00301FD1 /* Main.storyboard */ = {
+		EC157EED2D786DED00301FD1 /* UserList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EC157EEE2D786DED00301FD1 /* Base */,
 			);
-			name = Main.storyboard;
+			name = UserList.storyboard;
 			sourceTree = "<group>";
 		};
 		EC157EF22D786DEF00301FD1 /* LaunchScreen.storyboard */ = {
@@ -446,7 +596,7 @@
 				INFOPLIST_FILE = CaseApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = UserList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +623,7 @@
 				INFOPLIST_FILE = CaseApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = UserList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

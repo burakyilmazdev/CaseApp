@@ -8,16 +8,21 @@
 import UIKit
 
 class UserListTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet var userEmail: UILabel!
+    @IBOutlet var userName: UILabel!
+    @IBOutlet var userInitials: UILabel!
+    @IBOutlet var userInitialsView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = UIBezierPath(ovalIn: userInitialsView.bounds).cgPath
+        self.userInitialsView.layer.mask = maskLayer
+        
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
     
 }
