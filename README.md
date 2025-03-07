@@ -1,6 +1,6 @@
-#CaseApp
+# CaseApp
 
-##Tech Stack
+## Tech Stack
 
 - Swift
 - UIKit
@@ -15,10 +15,11 @@
 - **iOS 13** Minimum Deployment Target
 
 ## Installation & Setup
-### **Clone the Repository**
+
+Clone Repository
+
 ```
 git clone https://github.com/burakyilmazdev/CaseApp.git
 cd CaseApp
 ```
-
-### ** Open the Project in XCode**
+Open ```CaseApp.xcodeproj``` in XCode
